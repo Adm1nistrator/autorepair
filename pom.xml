@@ -3,7 +3,7 @@
  http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.objectdb.tutorial.spring</groupId>
+	<groupId>com.autorepair</groupId>
 	<artifactId>autorepair</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
@@ -15,13 +15,6 @@
 		<postgresql.version>9.3-1102-jdbc41</postgresql.version>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>objectdb</id>
-			<name>ObjectDB Repository</name>
-			<url>http://m2.objectdb.com</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -43,11 +36,7 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.objectdb</groupId>
-			<artifactId>objectdb</artifactId>
-			<version>2.6.5</version>
-		</dependency>
+
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>javax.persistence</artifactId>
