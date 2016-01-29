@@ -11,7 +11,8 @@ import java.util.List;
 @Component
 public class ClientDao {
     // Injected database connection:
-    @PersistenceContext private EntityManager em;
+    @PersistenceContext
+    private EntityManager em;
  
     // Stores a new client:
     @Transactional

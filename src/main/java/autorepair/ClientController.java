@@ -10,7 +10,7 @@ import java.io.UnsupportedEncodingException;
 
 @Controller
 public class ClientController {
- 
+
     @Autowired
     private ClientDao clientDao;
  
@@ -26,6 +26,7 @@ public class ClientController {
         String telephoneNumber = request.getParameter("telephoneNumber");
 
         String email = request.getParameter("email");
+
         if ((name != null) && (email != null))
             clientDao.persist(new Client(firstName,lastName,email,telephoneNumber));
  
